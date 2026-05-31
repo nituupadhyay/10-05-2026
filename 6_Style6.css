@@ -1,0 +1,12 @@
+.custom-text{
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+    color: blue;
+    transition: all 0.3s ease;
+}
+
+p :hover{
+    font-size: 12em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: brown;
+}

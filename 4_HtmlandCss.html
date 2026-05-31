@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .cursor-container{
+        display: grid;grid-template-columns: repeat(auto-fill,minmax(150px,1fr));gap: 10px;
+    }
+    .cursor-box{
+        border: 1px solid black; padding: 20px; text-align: center; cursor: pointer;
+    }
+    .c-pointer{
+        cursor:pointer;
+    }
+    .c-help{cursor:help;}
+    .c-wait{cursor:wait;}
+    .c-crosshair{cursor:crosshair;}
+    .c-not-allowed{cursor:not-allowed;}
+    .c-zoom-in{cursor:zoom-in;}
+</style>
+<body>
+    <div class="cursor-container">
+        <div class="cursor-box c-pointer">pointer</div>
+        <div class="cursor-box c-help">help</div>
+        <div class="cursor-box c-wait">wait</div>
+        <div class="cursor-box c-crosshair">crosshair</div>
+        <div class="cursor-box c-not-allowed">not-allowed</div>
+        <div class="cursor-box c-zoom-in">zoom-in</div>
+    </div>
+</body>
+</html>

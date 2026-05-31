@@ -1,0 +1,68 @@
+/* .has-tooltip :hover::after,
+.has-tooltip :hover::before {
+    opacity: 1;
+    visibility: visible;
+} */
+
+.has-tooltip{
+    position: relative;
+    cursor: help;
+}
+
+/* .tool-tip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+  cursor: pointer;
+} */
+
+.tool-tip {
+  visibility: visible;
+  width: 130px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+}
+
+.tool-tip:hover .has-tooltip {
+  visibility: visible;
+}
+
+/* .tool-tip::after{
+content: attr(data-tooltip);
+position: absolute;
+bottom: 125%;
+left: 50%;
+transform: translateX(-50%);
+background-color: brown;
+color: aquamarine;
+padding: 6px 10px;
+border-radius: 4em;
+font-size: 14px;
+white-space: nowrap;
+opacity: 0;
+visibility: visible;
+transition: opacity 0.3s ease, visibility 0.3s ease;
+pointer-events: none;
+z-index: 10;
+} */
+
+/* .has-tooltip::before {
+  content: "";
+  position: absolute;
+  bottom: calc(125% - 6px); /* Aligns the triangle right under the tooltip */
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 6px;
+  border-style: solid;
+  border-color: #333 transparent transparent transparent; /* Points down */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  pointer-events: none;
+  z-index: 10;
+} */
